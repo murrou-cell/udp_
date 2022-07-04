@@ -4,7 +4,7 @@ from parser import parse_args
 
 argg = {
     'CC_PORT':8881,
-    'SERVICE_PORT':51820,
+    'SERVICE_PORT':80,#51820
     'LISTEN_IP':'0.0.0.0'
     }
 
