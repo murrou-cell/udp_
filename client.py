@@ -13,6 +13,7 @@ argg = {
 argums = parse_args(argg)     
 
 DEST_IP = argums.DEST_IP
+DEST_IP = socket.gethostbyname(DEST_IP)
 DEST_PORT = argums.DEST_PORT
 LOCAL_IP = argums.LOCAL_IP 
 LOCAL_SERVICE = argums.LOCAL_SERVICE  
