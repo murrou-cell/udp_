@@ -35,3 +35,5 @@ EXPOSE 51820/tcp
 EXPOSE 8881/tcp
 EXPOSE 22/tcp
 
+ENTRYPOINT cd udp_ && python3 client.py --DEST_IP 20.223.235.86
+
