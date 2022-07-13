@@ -2,4 +2,4 @@
 apk add git
 apk add python3
 git clone https://github.com/murrou-cell/udp_.git
-python3 udp/client.py --DEST_IP pi-srv-vpn.duckdns.org
+python3 udp_/client.py --DEST_IP pi-srv-vpn.duckdns.org
