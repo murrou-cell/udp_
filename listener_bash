@@ -1,5 +1,6 @@
 #!/bin/bash
 apt install git
 apt install python3
+rm -r udp_
 git clone https://github.com/murrou-cell/udp_.git
 python3 udp_/listener.py
