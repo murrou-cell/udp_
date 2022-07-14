@@ -24,8 +24,10 @@ while True:
     sock_local.connect((LOCAL_IP,LOCAL_SERVICE)) 
     sockets = (sock_remote, sock_local) 
 
+    
     counter = 0
-
+    print(counter)
+    print*(DEST_IP)
     while True:    
         for s in sockets:
             s.setblocking(0)                                                                                                                                                                                                                                     
