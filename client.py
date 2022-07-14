@@ -24,11 +24,11 @@ while True:
     sock_local.connect((LOCAL_IP,LOCAL_SERVICE)) 
     sockets = (sock_remote, sock_local) 
 
-    
     counter = 0
-    print(counter)
-    print(DEST_IP)
+    
     while True:    
+        
+        
         for s in sockets:
             s.setblocking(0)                                                                                                                                                                                                                                     
         
@@ -37,8 +37,11 @@ while True:
         
             # send a keep alive message every timeout
             if not avail:
+                print(counter)
+                print(DEST_IP)
                 if counter >= 10:
                     break
+
                 counter += 1
                 sock_remote.send(b'keep alive')
                 continue
