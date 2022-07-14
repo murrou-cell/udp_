@@ -27,7 +27,7 @@ while True:
     
     counter = 0
     print(counter)
-    print*(DEST_IP)
+    print(DEST_IP)
     while True:    
         for s in sockets:
             s.setblocking(0)                                                                                                                                                                                                                                     
