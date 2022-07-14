@@ -35,7 +35,7 @@ while True:
         
             # send a keep alive message every timeout
             if not avail:
-                if counter == 10:
+                if counter >= 10:
                     break
                 counter += 1
                 sock_remote.send(b'keep alive')
