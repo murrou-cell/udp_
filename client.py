@@ -25,8 +25,11 @@ while True:
     sockets = (sock_remote, sock_local) 
 
     counter = 0
+    break_ = False
     
     while True:    
+        if break_:
+            break
         
         
         for s in sockets:
@@ -40,7 +43,7 @@ while True:
                 print(counter)
                 print(DEST_IP)
                 if counter >= 10:
-                    break
+                    break_ = True
 
                 counter += 1
                 sock_remote.send(b'keep alive')
